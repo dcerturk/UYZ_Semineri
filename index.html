@@ -1,1 +1,406 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapay Zeka Araç Kutusu</title>
+    <!-- Tailwind CSS CDN'i -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Kartların aynı yükseklikte olmasını ve butonu altta tutmasını sağlayan stil */
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
 
+    <div class="container mx-auto px-4 py-12">
+        <!-- Başlık Alanı -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-2">Yapay Zeka Araç Kutusu</h1>
+            <p class="text-lg text-gray-600">Seminer Notlarından Derlenen Faydalı Araçlar ve Kaynaklar</p>
+        </header>
+
+        <!-- Kategori: Video ve Animasyon -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 border-indigo-500 pb-2">Video ve Animasyon</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/6366f1/ffffff?text=Video+AI" 
+                             alt="Video AI Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/6366f1/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+                        
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">AI Studio Google</h3>
+                        <p class="text-gray-700 mb-4">Bedava video üretici.</p>
+                    </div>
+                    <a href="https://aistudio.google.com/live" target="_blank" class="mt-4 inline-block bg-indigo-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/6366f1/ffffff?text=Video+AI" 
+                             alt="Video AI Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/6366f1/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">InVideo AI</h3>
+                        <p class="text-gray-700 mb-4">Metinden videoya dönüştürme ve video düzenleme aracı.</p>
+                    </div>
+                    <a href="https://invideo.ai/" target="_blank" class="mt-4 inline-block bg-indigo-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/6366f1/ffffff?text=Video+AI" 
+                             alt="Video AI Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/6366f1/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Qwen-Image-Edit-Angles</h3>
+                        <p class="text-gray-700 mb-4">Hugging Face üzerinde: Fotoğraftan, açısı değişen kamera videosu oluşturma.</p>
+                    </div>
+                    <a href="https://huggingface.co/spaces/linoyts/Qwen-Image-Edit-Angles" target="_blank" class="mt-4 inline-block bg-indigo-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Kategori: Ses ve Müzik -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 border-teal-500 pb-2">Ses ve Müzik</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/14b8a6/ffffff?text=Ses+AI" 
+                             alt="Ses AI Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/14b8a6/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">ElevenLabs</h3>
+                        <p class="text-gray-700 mb-4">Gelişmiş ses AI, klonlama ve video dublaj. Youtube linkinden çeviri yapabilir.</p>
+                    </div>
+                    <a href="https://elevenlabs.io/app/speech-synthesis/text-to-speech" target="_blank" class="mt-4 inline-block bg-teal-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-teal-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/14b8a6/ffffff?text=Ses+AI" 
+                             alt="Ses AI Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/14b8a6/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Minimax</h3>
+                        <p class="text-gray-700 mb-4">Metinden sese ve ses klonlama aracı.</p>
+                    </div>
+                    <a href="https://www.minimax.io/audio/text-to-speech" target="_blank" class="mt-4 inline-block bg-teal-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-teal-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/14b8a6/ffffff?text=M%C3%BCzik+AI" 
+                             alt="Müzik AI Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/14b8a6/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Covers.ai</h3>
+                        <p class="text-gray-700 mb-4">Yapay zeka ile şarkı coverları oluşturma platformu.</p>
+                    </div>
+                    <a href="https://covers.ai/" target="_blank" class="mt-4 inline-block bg-teal-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-teal-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Kategori: Görüntü, 3D ve Çizgi Roman -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 border-red-500 pb-2">Görüntü, 3D ve Çizgi Roman</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/ef4444/ffffff?text=3D+Model" 
+                             alt="3D Model Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/ef4444/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Hunyuan 3D</h3>
+                        <p class="text-gray-700 mb-4">Tencent'in aracı: Fotoğraftan 3D model üretimi.</p>
+                    </div>
+                    <a href="https://hunyuan.tencent.com/" target="_blank" class="mt-4 inline-block bg-red-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-red-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/ef4444/ffffff?text=%C3%87izgi+Roman" 
+                             alt="Çizgi Roman Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/ef4444/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">AI Comic Factory</h3>
+                        <p class="text-gray-700 mb-4">Hugging Face üzerinde: Yapay zeka ile çizgi roman oluşturma.</p>
+                    </div>
+                    <a href="https://huggingface.co/spaces/jbilcke-hf/ai-comic-factory" target="_blank" class="mt-4 inline-block bg-red-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-red-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/ef4444/ffffff?text=Sanal+Moda" 
+                             alt="Sanal Moda Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/ef4444/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Miragic.ai</h3>
+                        <p class="text-gray-700 mb-4">Sanal kıyafet deneme (Try on Clothes) aracı.</p>
+                    </div>
+                    <a href="https://miragic.ai/" target="_blank" class="mt-4 inline-block bg-red-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-red-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kategori: Metin, Kod ve Genel AI -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 border-blue-500 pb-2">Metin, Kod ve Genel AI</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/3b82f6/ffffff?text=Metin+AI" 
+                             alt="Metin AI Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/3b82f6/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Claude AI</h3>
+                        <p class="text-gray-700 mb-4">Gelişmiş sohbet robotu. Not: Eğik Atış Simülatörü üretici, publish mümkün, HTML çıktı verir.</p>
+                    </div>
+                    <a href="https://claude.ai/" target="_blank" class="mt-4 inline-block bg-blue-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/3b82f6/ffffff?text=AI+Modelleri" 
+                             alt="AI Modelleri Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/3b82f6/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Hugging Face</h3>
+                        <p class="text-gray-700 mb-4">Birçok yapay zeka modelinin ve uygulamasının bulunduğu ortak arayüz.</p>
+                    </div>
+                    <a href="https://huggingface.co/" target="_blank" class="mt-4 inline-block bg-blue-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/3b82f6/ffffff?text=Sohbet+AI" 
+                             alt="Sohbet AI Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/3b82f6/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Grok</h3>
+                        <p class="text-gray-700 mb-4">Güncel bilgilere erişebilen sohbet tabanlı yapay zeka modeli.</p>
+                    </div>
+                    <!-- Notta link yoktu, o yüzden buton eklenmedi -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Kategori: Sunum ve Verimlilik -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 border-green-500 pb-2">Sunum ve Verimlilik</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                 <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/22c55e/ffffff?text=Sunum+AI" 
+                             alt="Sunum AI Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/22c55e/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Gamma</h3>
+                        <p class="text-gray-700 mb-4">Yapay zeka destekli sunu ve doküman oluşturma aracı.</p>
+                    </div>
+                    <a href="https://gamma.app/create" target="_blank" class="mt-4 inline-block bg-green-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/22c55e/ffffff?text=Not+Alma+AI" 
+                             alt="Not Alma AI Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/22c55e/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">NotebookLM</h3>
+                        <p class="text-gray-700 mb-4">Google'ın not alma ve belgelerle sohbet etme aracı. Mind Map, Flash Card, Flow Chart özellikleri.</p>
+                    </div>
+                    <a href="https://notebooklm.google/" target="_blank" class="mt-4 inline-block bg-green-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/22c55e/ffffff?text=Ofis+AI" 
+                             alt="Ofis AI Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/22c55e/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">OnlyOffice (AI)</h3>
+                        <p class="text-gray-700 mb-4">Yapay zeka özellikli ofis paketi. Gemini'dan API Key alıp kullanılıyor.</p>
+                    </div>
+                    <a href="https://www.onlyoffice.com/" target="_blank" class="mt-4 inline-block bg-green-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/22c55e/ffffff?text=Fikir+Y%C3%B6netimi" 
+                             alt="Fikir Yönetimi Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/22c55e/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Napkin.ai</h3>
+                        <p class="text-gray-700 mb-4">Yapay zeka destekli düşünce ve not organize etme aracı.</p>
+                    </div>
+                    <a href="https://www.napkin.ai/" target="_blank" class="mt-4 inline-block bg-green-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kategori: Geliştirici ve Diğer Araçlar -->
+        <section>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b-2 border-purple-500 pb-2">Geliştirici ve Diğer Araçlar</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/a855f7/ffffff?text=Makine+%C3%96%C4%9Frenmesi" 
+                             alt="Makine Öğrenmesi Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/a855f7/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Teachable Machine</h3>
+                        <p class="text-gray-700 mb-4">Kod yazmadan makine öğrenmesi modelleri eğitmek için kullanılan bir Google aracı.</p>
+                    </div>
+                    <a href="https://teachablemachine.withgoogle.com/" target="_blank" class="mt-4 inline-block bg-purple-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/a855f7/ffffff?text=Yerel+AI" 
+                             alt="Yerel AI Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/a855f7/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Ollama</h3>
+                        <p class="text-gray-700 mb-4">Yerelde (internetsiz) çalışan yapay zeka modelleri için bir platform.</p>
+                    </div>
+                    <a href="https://ollama.com/" target="_blank" class="mt-4 inline-block bg-purple-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/a855f7/ffffff?text=UI+Olu%C5%9Fturucu" 
+                             alt="UI Oluşturucu Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/a855f7/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">v0.app</h3>
+                        <p class="text-gray-700 mb-4">Metin komutlarından web sayfası arayüzü (UI) oluşturan ve klonlayan araç.</p>
+                    </div>
+                    <a href="https://v0.dev/" target="_blank" class="mt-4 inline-block bg-purple-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 card">
+                    <div>
+                        <!-- Görsel Eklendi -->
+                        <img src="https://placehold.co/400x200/a855f7/ffffff?text=AI+Agent" 
+                             alt="AI Agent Görseli" 
+                             class="w-full h-32 object-cover rounded-lg mb-4"
+                             onerror="this.src='https://placehold.co/400x200/a855f7/ffffff?text=G%C3%B6rsel+Hatas%C4%B1'">
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Manus.im</h3>
+                        <p class="text-gray-700 mb-4">Verilen görevi webde gerçekleştiren yapay zeka agent'ı.</p>
+                    </div>
+                    <a href="https://manus.im/app" target="_blank" class="mt-4 inline-block bg-purple-600 text-white text-center font-medium py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
+                        Ziyaret Et
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center p-6 mt-12 bg-gray-200">
+        <p class="text-gray-600">Bu sayfa, seminer notlarından yola çıkılarak derlenmiştir.</p>
+    </footer>
+
+</body>
+</html>
